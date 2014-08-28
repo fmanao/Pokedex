@@ -1,77 +1,130 @@
 @import url(http://fonts.googleapis.com/css?family=Play);
-body{
-	background: yellow;
+*{
 	font-family: 'Play', sans-serif;
-	font-size: 16px;
-}
-#datosBasic{
-    display: inline-block;
-    margin: 2em 0;
+	text-align: justify;
+    margin: 0;
+    padding: 0;
+  }
+
+
+ #about{
+  background: rgba(167, 170, 175, 0.47);
+  border-radius: 0 1em 1em 0;
+  float: left;
+  margin: 3em 0;
+  position: fixed;
+  text-align: center;
+  width: 13em;
+ }
+ #about ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-family: cursive;
+ }
+ #about ul li{
+    text-decoration: none;
     text-align: center;
+ }
+#main{
+  position: absolute;
+  background-position: center;
+  background-image: url('../images/pokedex.png');
+  background-repeat: no-repeat;
+  background-position-x: 59%;
+  background-size: 70%;
+  width: 83.4em;
+  height: 700px;
+}
+
+#pokemones{
+  position: relative;
+  top: 11.2em;
+  left: -0.3em;
+	 width: 28%;
+    border: 1px solid red;
+    padding: 5px;
+    height: 54.2%;
+    margin: 0em 0em 0em 15em;
+    display: inline-block;
+}
+
+#datos{ 
+  position: relative;
+  top: -13.5em;
+  left: -2em;
+     transition: all 0.5s ease;
+     width: 24em;
+     height: 24em;
+     margin: 11em 0em 0em 1.6em;
+     overflow: overlay;
+}
+
+#datos div img{
+	width: 100%;
+	display: inline-block;
+    margin-top:2em; 
+}
+
+#pokePic {
+    display: inline-block;
+    vertical-align: top;
+    width: 10em;
+    height: 10em;
+    margin-top: 2em;
+}
+
+#datosP{
+	width: 22em;
+    height: 27.4em;
+    display: inline-block;
+    vertical-align: top;
+    margin: 11.5em 0em 0em 4.5em;
+}
+
+#datosP div{
+	width: 4em;
+	height: 4em;
+	margin: 1em;
+	text-align: center;
+  display: inline-block;
+}
+#difuminacion{
+     display: inline-block;
+     border-radius: 2em;
+     text-align: center;
+}
+#datosBasic {
+    display: inline-block;
     width: 13em;
-}
-#datosBasic h2{
-    border: 1px solid;
-    border-radius: 2em;
-    display: inline-block;
-    margin: 0.2em 0em;
     text-align: center;
-    width: 8em;
+    margin: 2em 0;
 }
-#datosBasic h3{
-	font-size: 1.15em;
-    border: 1px solid;
-    border-radius: 2em;
+
+#datosBasic h2 {
+    width: 8em;
     display: inline-block;
-    margin: 0.2em 0em;
     text-align: center;
-    width: 8em;
+    border-radius: 2em;
+    margin: 0.2em 0em;
+    border:1px solid;
 }
-#datosBasic #pokeVida,#pokeAtaque,#pokeDefensa{
-	background: red;
+#pokeName {
+  text-align: center;
+  margin-bottom: .6em;
 }
-#datosBasic #pokeTipo{
-	left: 10.3em;
-	position: relative;
+
+#pokeVida,
+#pokeDefensa,
+#pokeAtaque{
+    background: red;
 }
-#pokedex{
-	background: url("../images/pokedex.png") no-repeat;
-	background-position: center;
-	background-size: 70%;
-	height: 700px;
-	position: absolute;
-	width: 87%;
-}
-#pokedex h2{
-	margin: 0;
-}
-#pokedex #datosBasic h3{
-	margin: 0.1em;
-	position: relative;
-	top: -2|em;
-}
-#pokedex h3{
-	margin: 0;
-}
-#pokedex #datosPokemon {
-	border: 2px solid black;
-	height: 55.55%;
-	left: 14.7em;
-	position: relative;	
-	top: 6.24em;
-	width: 28.75%;
-}
-#pokedex #pokeNombre{
-	font-size: 2.5em;
-	left: 5px;
-	margin: 0.5em;
-	position: relative;
-}
-#pokedex #pokePic{
-	border-style: dashed;
-	height: 7em;
-	left: 12em;
-	position: relative;
-	top: -12.2em;
-	width: 7em;
+
+#pokeDescripcion{
+	padding: 0 1em 0 0.2em;
+  height: 35%;
+  width: 94%;
+
+  overflow-x: auto;
+  white-space: pre-wrap;
 }

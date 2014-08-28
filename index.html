@@ -1,43 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title>PokéDex</title>
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Pokemon</title>
+	<link rel="stylesheet" href="css/main.css">
 	<script type="text/javascript" src="js/main.js"></script>
 </head>
-
 <body>
-	<!--<nav>
-		<ul>
-			<li><a onclick="" href="">Bulbasaur</a></li>
-			<li><a onclick="" href=""></a></li>
-			<li><a onClick="" href="">VenuSaur</a></li>
-			<li><a onclick="" href=""></a></li>
-			<li><a onclick="" href=""></a></li>
-			<li><a onclick="" href=""></a></li>
-			<li><a onclick="" href=""></a></li>
-			<li><a onclick="" href=""></a></li>
-			<li><a onclick="" href=""></a></li>
-			<li><a onclick="" href=""></a></li>
-		</ul>
-	</nav>-->
-	<div id="pokedex">
-		<h1>Pokemon</h1>
-		<div id="datosPokemon">
-			<h1 id="pokeNombre">Nombre</h1>
-			<div id="datosBasic">
-				<h2 id="pokeVida">Vida</h2>
-				<h2 id="pokeAtaque">Ataque</h2>
-				<h2 id="pokeDefensa">Defensa</h2>
-				<h3 id="pokeTipo"></h3>
-			</div>
-			<h2 id="pokeDescripcion">Descripción</h2>
-			<h2 id="pokePic"></h2>
-		</div>
-	</div>
-		<script type="text/javascript">
-			pokemonMostrar(venusaur);
-		</script>
+	<!--<div id="about">
+			<ul>
+				<li>Acerca del creador</li>
+				<li><span>Oqueber navarro</span></li>
+				<li>Estudiante de <a href="https://mejorando.la/">Mejorandola</a></li>
+				<li>15/08/2014</li>
+			</ul>
+		</div>-->
+  <div id="main">
+	<div id="pokemones">
+		<div id="datos">
+		   <div id="datosBasic">
+		       <h1 id="pokeName"></h1>
+		       <h2 id="pokeVida"></h2>
+		       <h2 id="pokeDefensa"></h2>
+		       <h2 id="pokeAtaque"></h2>
+		       <h3 id="pokeTipo"></h3>
+		   </div>
+		<div id="pokePic"></div>
+		   <p id="pokeDescripcion"></p>
+
+	    </div>
+    </div>
+	<div id="datosP">
+       <div id="pikachu" onClick="mostrar(Torchic)"><img src="images/pokemones/Torchic_E.gif"></div>
+
+		<div id="Squirtle" onClick='mostrar(Treecko)'><img src="images/pokemones/Treecko_E.gif"></div>
+
+		<div id="Charmander" onClick='mostrar(Mudkip)'><img src="images/pokemones/Mudkip_E.gif"></div>
+
+		<div id="Bulbasaur" onClick='mostrar(Ralts)'><img src="images/pokemones/Ralts_E.gif"></div>
+    </div>
+  </div>
 </body>
 </html>
