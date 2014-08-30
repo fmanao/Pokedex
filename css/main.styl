@@ -1,0 +1,117 @@
+@import url("http://fonts.googleapis.com/css?family=Play")
+*
+  margin 0
+  padding 0
+
+body
+  font-family 'Play', sans-serif
+  font-size 16px
+  text-align justify
+
+#about
+  background rgba(167,170,175,0.47)
+  border-radius 0 1em 1em 0
+  float left
+  margin 3em 0
+  position fixed
+  text-align center
+  width 13em
+  ul
+    font-family 'Play', cursive
+    list-style-type none
+    margin 0
+    padding 0
+    li
+      text-align center
+      text-decoration none
+
+#difuminacion
+  border-radius 2em
+  display inline-block
+  text-align center
+
+#main
+  background-image url("../images/pokedex.png")
+  background-position center
+  background-position-x 59%
+  background-repeat no-repeat
+  background-size 70%
+  height 700px
+  position absolute
+  width 83.4em
+  #datosP
+    background rgba(50,50,50,1)
+    border 5px solid black
+    border-radius 0.75em
+    display inline-block
+    height 62%
+    left 2.5em
+    margin 11.5em 0em 0em 4.5em
+    position relative
+    vertical-align top
+    width 25.8%
+    overflow-x auto
+    ul
+      li
+        font-size 2em
+        list-style-type none
+        text-align center
+        white-space pre-wrap
+        &:hover
+          background #575757
+
+  #pokemones
+    border 1px solid #f00
+    display inline-block
+    position relative
+    height 54.2%
+    left -0.3em
+    margin 0em 0em 0em 15em
+    padding 5px
+    top 11.2em
+    width 28%
+    #datos
+      height 24em
+      left -2em
+      margin 11em 0em 0em 1.6em
+      overflow overlay
+      position relative
+      top -13.5em
+      transition all 0.5s ease
+      width 24em
+      div
+        img
+          display inline-block
+          margin-top 2em
+          width 100%
+      #datosBasic
+        display inline-block
+        margin 2em 0
+        text-align center
+        width 13em
+        h2
+          border 1px solid
+          border-radius 2em
+          display inline-block
+          margin 0.2em 0em
+          text-align center
+          width 8em
+        #pokeName
+          margin-bottom 0.6em
+          text-align center
+        #pokeVida
+        #pokeDefensa
+        #pokeAtaque
+          background #f00
+      #pokeDescripcion
+        height 35%
+        overflow-x auto
+        padding 0 1em 0 0.2em
+        white-space pre-wrap
+        width 94%
+  #pokePic
+    display inline-block
+    height 10em
+    margin-top 2em
+    vertical-align top
+    width 10em
